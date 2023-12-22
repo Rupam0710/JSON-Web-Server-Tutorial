@@ -81,3 +81,10 @@ localhost:3000/(array of objects name)?(category_name)_like=(value)
 
  localhost:3000/products?category_like=^f   ->  It filters all the products that starts with f
 
+ 11. How to perform full text search in json-server?
+
+ ans.
+ localhost:3000/(array of objects name)?q=(value)
+
+  localhost:3000/products?q=in
+
