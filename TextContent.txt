@@ -1,0 +1,20 @@
+1. What is JSON server and why is it required ?
+
+ans. 
+a. JSON Server is an npm package that lets you create fake Rest APIs with zero coding.
+b. As a front end developer, I constantly need mock data that I can use to quickly prototype front end components.
+c. Data should be fetched asychronously and the APIs should support not just GET but also POST, PUT and DELETE requests.
+d. Creating a node + express + mongodb backend is a pretty time consuming.
+
+2. What are the steps to create a JSON server?
+
+ans.
+a. Create a package.json file in project folder - npm init -y.
+b. Install the json server package - yarn add json-server  or     npm install json-server.
+c. Add a new script to start the server - 
+   in scripts in package.json file we will add - "serve-json":"json-server --watch db.json" 
+
+3. How to run the json-server?
+
+ans.  npm run serve-json   or     yarn serve-json.
+
