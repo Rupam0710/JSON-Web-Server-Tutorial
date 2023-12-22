@@ -43,3 +43,13 @@ ex: localhost:3000/products?_sort=price&_order=desc
 
 localhost:3000/(array of objects name)?_sort=(category_name),(2nd category_name)&_order=desc,(2nd_category order)  -> multiple fields sorting
 ex: localhost:3000/products?_sort=price,category&_order=desc,asc
+
+7. How to set Pagination to json-server?
+
+ans.
+localhost:3000/(array of objects name)?_page=(pageNumber) -> for vieiwng the data of page 1
+ex: localhost:3000/products?_page=1 
+
+
+localhost:3000/(array of objects name)?_page=(pageNumber)&_limit=(limitValue) -> for vieiwng the data of page 1 where no of the values displayed will be limitValue
+ex: localhost:3000/products?_page=1&_limit=2 
