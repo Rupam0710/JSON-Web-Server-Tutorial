@@ -210,3 +210,9 @@ JSON :
 
 Response : {}
 
+17. To make realistic data we can use 
+
+a. Faker - https://github.com/faker-js/faker
+b. Casual - https://github.com/boo1ean/casual
+c. ChanceJS - https://github.com/chancejs/chancejs
+
