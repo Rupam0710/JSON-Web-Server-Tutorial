@@ -88,3 +88,16 @@ localhost:3000/(array of objects name)?(category_name)_like=(value)
 
   localhost:3000/products?q=in
 
+
+12. How can we have a relationship between parent and the child review served as a part of the api?
+    How the child resources can be fetched?
+ans. 
+
+ localhost:3000/(array of objects parent)?_embed=((array of objects child))
+ localhost:3000/products?_embed=reviews
+
+ 13. How can the parent resources be fetched?
+
+ ans.
+  localhost:3000/(array of objects child)?expand=((array of objects parent)) -> parent will be singular
+ localhost:3000/reviews?_expand=product
