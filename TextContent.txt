@@ -18,3 +18,9 @@ c. Add a new script to start the server -
 
 ans.  npm run serve-json   or     yarn serve-json.
 
+4. How to get request from json-server?
+
+ans. We can navigate to 
+localhost:3000/(array of objects name) : for getting all the values
+localhost:3000/(array of objects name)/(id) : for getting specific values
+
