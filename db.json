@@ -72,13 +72,6 @@
       "discount": {
         "type": "shipping"
       }
-    },
-    {
-      "id": 111,
-      "title": "Unique 111",
-      "category": "electronics",
-      "price": 4000,
-      "description": "This is description about product 111"
     }
   ],
   "reviews": [

@@ -128,4 +128,85 @@ so oddly this is the easiest and best answer at this time.
  Note: 
 The URL "http://[::1]:3000/products" appears to be a local address using IPv6 loopback notation. Specifically, "::1" is the IPv6 loopback address, which is equivalent to the IPv4 loopback address "127.0.0.1". The port number "3000" is commonly used for web development servers.
 
+15. How to set request in json-server?
+
+ans.
+Set Request Method:
+
+In the request details, select "PUT" as the HTTP method. This is the method used for updating or creating a resource on the server. We have to write the entire object to make the changes.
+
+PUT:    http://[::1]:3000/products/111
+
+JSON :
+ {
+      "id": 111,
+      "title": "Unique 111",
+      "category": "software",
+      "price": 4000,
+      "description": "This is description about product 111"
+}
+
+Response :
+
+ {
+  "id": 111,
+  "title": "Unique 111",
+  "category": "software",
+  "price": 4000,
+  "description": "This is description about product 111"
+}
+
+
+PATCH :
+Choose the Request Method: Look for a dropdown or some other option to select the HTTP method. There should be options like GET, POST, PUT, DELETE, and hopefully PATCH.
+
+Select PATCH: If the PATCH method is available, select it from the dropdown or the relevant option.
+
+Configure Request: Fill in the necessary details for your PATCH request, including the URL, headers, request body, and any other parameters.
+
+Send the Request: Use the option provided to send the PATCH request.
+
+In PATCH , we only have to use the property that we want to change.
+
+http://[::1]:3000/products/111
+ 
+JSON Content: 
+ {
+      
+      "price": 7000
+      
+ }
+
+ Response :
+
+ {
+  "id": 111,
+  "title": "Unique 111",
+  "category": "software",
+  "price": 7000,
+  "description": "This is description about product 111"
+}
+
+
+16. How do you want to delete a data in json-server?
+
+ans. 
+DELETE : 
+
+In most API testing tools, including ThunderClient, you would typically use the HTTP method "DELETE" when you want to request the removal of a resource on the server. Here's a general overview of how you might use the "DELETE" method in ThunderClient:
+
+Open ThunderClient.
+Create a new request or open an existing one.
+Set the request method to "DELETE."
+Enter the URL of the resource you want to delete.
+Add any necessary headers or parameters.
+Send the request.
+
+
+DELETE : http://[::1]:3000/products/111
+
+JSON :  
+
+
+Response : {}
 
