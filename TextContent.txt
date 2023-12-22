@@ -32,3 +32,14 @@ localhost:3000/(array of objects name)?(category_name=filterValue)&(category_nam
 
 ex: localhost:3000/products?category=electronics&discount.type=shipping
 
+6.How to sort data in json-server?
+
+ans.
+localhost:3000/(array of objects name)?_sort=(category_name)  -> ascending order
+ex: localhost:3000/products?_sort=price
+
+localhost:3000/(array of objects name)?_sort=(category_name)&_order=desc  ->  descending order
+ex: localhost:3000/products?_sort=price&_order=desc 
+
+localhost:3000/(array of objects name)?_sort=(category_name),(2nd category_name)&_order=desc,(2nd_category order)  -> multiple fields sorting
+ex: localhost:3000/products?_sort=price,category&_order=desc,asc
