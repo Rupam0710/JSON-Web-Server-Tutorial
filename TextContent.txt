@@ -101,3 +101,31 @@ ans.
  ans.
   localhost:3000/(array of objects child)?expand=((array of objects parent)) -> parent will be singular
  localhost:3000/reviews?_expand=product
+
+
+13. How to post a request to db.json?
+
+ans. 
+a. Open ThunderClient extension in VS code , then click on new request.
+b. Select POST option and then use http://[::1]:3000/products to post data to the product.
+c. In the body , enter the content you want to add.
+    {
+      "id": 111,
+      "title": "Unique 111",
+      "category": "electronics",
+      "price": 4000,
+      "description": "This is description about product 111"
+    }
+
+14. Why is it showing connection is refused by the server whenever we are using post in ThunderClient and what should we use to overcome it?
+
+ans.
+localhost is not exposed to ThunderClient, but [::1] works uniformly in npm/pnpm/bun without the --host option.
+
+so oddly this is the easiest and best answer at this time.
+ http://[::1]:3000
+
+ Note: 
+The URL "http://[::1]:3000/products" appears to be a local address using IPv6 loopback notation. Specifically, "::1" is the IPv6 loopback address, which is equivalent to the IPv4 loopback address "127.0.0.1". The port number "3000" is commonly used for web development servers.
+
+
