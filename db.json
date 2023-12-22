@@ -72,6 +72,13 @@
       "discount": {
         "type": "shipping"
       }
+    },
+    {
+      "id": 99,
+      "title": "Product 9",
+      "category": "technology",
+      "price": 964000,
+      "description": "This is description about product 9"
     }
   ],
   "reviews": [
