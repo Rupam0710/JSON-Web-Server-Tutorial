@@ -53,3 +53,31 @@ ex: localhost:3000/products?_page=1
 
 localhost:3000/(array of objects name)?_page=(pageNumber)&_limit=(limitValue) -> for vieiwng the data of page 1 where no of the values displayed will be limitValue
 ex: localhost:3000/products?_page=1&_limit=2 
+
+8. How to display a value based on a range for example price in json-server?
+
+ans.
+localhost:3000/(array of objects name)?(category_name)_gte=(value)&(category_name)_lte=(value)   ->
+to display the details whose value is given with that certain range.
+gte - greater than equal
+lte - lesser than equal
+
+ex: localhost:3000/products?price_gte=2000&price_lte=6000
+
+
+9. How to display a value that is not eaul to a certain value in json-server?
+
+ans.
+localhost:3000/(array of objects name)?(category_name)_ne=(value)
+ne - not equal 
+
+ localhost:3000/products?id_ne=1
+
+
+10. How to use regex to filter data in json-server?
+
+ans.
+localhost:3000/(array of objects name)?(category_name)_like=(value)
+
+ localhost:3000/products?category_like=^f   ->  It filters all the products that starts with f
+
